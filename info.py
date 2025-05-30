@@ -18,8 +18,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', "24005775"))
-API_HASH = environ.get('API_HASH', "e2593d8b0f5f52798926619defc21905")
+API_ID = int(environ.get('API_ID', "21791847"))
+API_HASH = environ.get('API_HASH', "43bbaaf42ddc4e06337f4afaf9c9728e")
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
@@ -37,7 +37,7 @@ QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/0dc09489edb054d01c61c-5
 REFERAL_TIME = int(environ.get('REFERAL_USER_TIME', "2592000")) # set in seconds | already seted 1 month premium
 REFFER_POINT = int(environ.get('USER_POINT', "50")) # Set Referel point Count 
 #premium Users Satuts
-premium = environ.get('PREMIUM_LOGS', '-1002306948486')
+premium = environ.get('PREMIUM_LOGS', '-1002561942019')
 PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 # lock file, set file limit 
 FILE_LIMITE = int(environ.get('FILE_LIMITE', 15))
@@ -45,12 +45,12 @@ SEND_ALL_LIMITE = int(environ.get('SEND_ALL_LIMITE', 3))
 LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), False)
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6003799985 5935267941 1329298095 5264985514 1923770971 6957554126').split()]
-OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "me_miss_you") # widout 👉 @
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002526032551').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1737525036').split()]
+OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "sauravjoshi2007") # widout 👉 @
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002536646724').split()]
 # post channel auto post new movie
-POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002189699605').split(','))))
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1001516086171'))
+POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1001983369508').split(','))))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002536646724'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 
@@ -91,13 +91,13 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/ajmoviesgroup')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Ajeet_bots')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/sauravjoshichats')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/sauravMKV')
 MSG_ALRT = environ.get('MSG_ALRT', '🔋 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ - 𓆩〭⃛〬𓆩〭⃛〬➤⃝✖‿✖•Ajͥeeͣtͫ')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002400433284))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002556663380))
 GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1002352781135)) # Group verify stats 
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002352781135)) # movies request channel, else log channel
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'ajeetxsupport')
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1002645955504)) # movies request channel, else log channel
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
